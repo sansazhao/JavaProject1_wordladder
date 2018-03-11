@@ -68,7 +68,7 @@ public class Wordladder {
                     +word2+".");
     }
 
-    private static void searchLadder(String w1,String w2){
+    public static void searchLadder(String w1,String w2){
         //complete process of finding ladder
         Stack<String>cur_stack = new Stack<String>();
         Stack<String>wStack = new Stack<String>();

@@ -55,6 +55,7 @@ public void testNeighbor() throws Exception {
 @Test
 public void testMain() throws Exception {
     System.out.println("main");
+    assertSame(wl.word1,wl.word2);
 //TODO: Test goes here... 
 } 
 
@@ -68,6 +69,7 @@ public void testMain() throws Exception {
 public void testLadder_to_word() throws Exception { 
 //TODO: Test goes here...
     System.out.println("Ladder_to_word");
+    assertNotSame(wl.used_wordSet,wl.word2);
 /*
 try { 
    Method method = Wordladder.getClass().getMethod("ladder_to_word", String.class, Stack<String>cur_stack.class); 
@@ -105,11 +107,15 @@ try {
 * 
 * Method: searchLadder(String w1, String w2) 
 * 
-*/ 
+*/
+
 @Test
 public void testSearchLadder() throws Exception { 
 //TODO: Test goes here...
     System.out.println("searchLadder");
+    String a  = "data";
+    String b = "code";
+    wl.searchLadder("data","code");
 /* 
 try { 
    Method method = Wordladder.getClass().getMethod("searchLadder", String.class, String.class); 
